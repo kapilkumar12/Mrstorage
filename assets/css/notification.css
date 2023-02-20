@@ -1,0 +1,63 @@
+#msg_display {
+  display: none;
+  width: 350px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 2px;
+  padding: 5px 10px;
+  position: fixed;
+  z-index: 9999;
+  left: 15px;
+  bottom: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+#msg_display .icon {
+  width: 60px;
+  height: 60px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#msg_display .icon .fa {
+  font-size: 28px;
+  color: #fff;
+}
+#msg_display .msg .msg-type {
+  font-weight: 600;
+}
+#msg_display .msg p {
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+#msg_display a.cross {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+#msg_display.show {
+  display: block;
+  display: flex !important;
+  align-items: center;
+}
+#msg_display.success {
+  background: #28a745 !important;
+}
+#msg_display.error {
+  background: #c00f0f !important;
+}
+#msg_display.warning {
+  background: #fcf8e3 !important;
+  border: 1px solid #8a6d3b;
+  border-radius: 2px;
+}
+#msg_display.warning .icon .fa,
+#msg_display.warning .msg #msg-type,
+#msg_display.warning .msg p {
+  color: #8a6d3b !important;
+}
